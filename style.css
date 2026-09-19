@@ -86,3 +86,26 @@ footer {
 .grid-container li:hover {
   transform: translateY(-5px);
 }
+/* Skills Grid Layout */
+.grid-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+    gap: 15px !important;
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin-top: 15px !important;
+}
+
+.grid-container li {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    text-align: center !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.grid-container li:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
