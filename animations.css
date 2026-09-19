@@ -1,0 +1,34 @@
+/* Smooth Page Load Fade-In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Card Hover Elevation & Scale Effect */
+.card, .project-card, .skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .project-card:hover, .skill-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Pulse/Ripple Animation */
+button, .btn {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.05);
+}
