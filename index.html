@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Profile</title>
+    <title>Muhammad Irfan | Personal Portfolio & Task Manager</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
 
@@ -16,6 +15,7 @@
         <nav>
             <a href="#about">About Me</a> |
             <a href="#skills">Skills</a> |
+            <a href="#projects">Week 4 Project</a> |
             <a href="#education">Education</a> |
             <a href="#contact">Contact</a>
         </nav>
@@ -27,7 +27,7 @@
         <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! My name is Muhammed Irfan. I am a Computer Science student interested in web development and technology.</p>
+            <p>Hello! My name is Muhammad Irfan. I am a Computer Science student interested in web development and technology.</p>
         </section>
 
         <!-- Skills Section -->
@@ -35,16 +35,50 @@
             <h2>Skills</h2>
             <ul class="grid-container">
                 <li>C++</li>
-                <li>HTML5</li>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript (ES6+)</li>
                 <li>Database Management</li>
-                <li>Data Structures and Algorithms</li>
+                <li>Data Structures & Algorithms</li>
             </ul>
+        </section>
+
+        <!-- Week 4 Task Manager Project Section -->
+        <section id="projects" class="project-section">
+            <h2>Week 4 Project: Dynamic Task Manager</h2>
+            <p class="project-desc">Built with Vanilla JavaScript, DOM Manipulation, and localStorage persistence.</p>
+            
+            <div class="app-container">
+                <!-- Task Form -->
+                <div class="card form-card">
+                    <form id="task-form">
+                        <input type="text" id="task-input" placeholder="Enter new task..." autocomplete="off">
+                        <button type="submit" id="add-btn">Add Task</button>
+                    </form>
+                    <p id="error-msg" class="error-msg"></p>
+                </div>
+
+                <!-- Filters & Controls -->
+                <div class="card filter-card">
+                    <div class="filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="active">Active</button>
+                        <button class="filter-btn" data-filter="completed">Completed</button>
+                    </div>
+                    <button id="clear-all-btn" class="danger-btn">Clear All</button>
+                </div>
+
+                <!-- Task List Display -->
+                <div class="card list-card">
+                    <ul id="task-list"></ul>
+                    <p id="empty-msg" class="empty-msg">No tasks found. Add a task above!</p>
+                </div>
+            </div>
         </section>
 
         <!-- Education Section -->
         <section id="education">
             <h2>Education</h2>
-            <p>I am currently pursuing a degree in Computer Science.</p>
+            <p>I am currently pursuing a Bachelor of Science degree in Computer Science.</p>
             <p>My studies include programming, databases, data structures, computer networks, and software engineering.</p>
         </section>
 
@@ -75,8 +109,10 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2026 Muhammed Irfan. All Rights Reserved.</p>
+        <p>&copy; 2026 Muhammad Irfan. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript File Linking -->
+    <script src="Scripts/main.js"></script>
 </body>
 </html>
